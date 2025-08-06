@@ -1,0 +1,70 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;                 
+    background-image: url('bac.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card {
+    width: 90%;
+    padding: 2.5rem;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+.card h2 {
+  margin-bottom: 1rem;
+}
+.card p {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+.social-icons a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons .bi-instagram {
+  color: #E4405F;
+}
+.social-icons .bi-telegram {
+  color: skyblue;
+}
+
+.social-icons .bi-github {
+  color: black;
+}
