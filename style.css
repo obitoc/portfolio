@@ -1,7 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
-  padding:0;
-  margin:0;
+  font-family: "Poppins";
   box-sizing: border-box;
 }
 
@@ -19,6 +17,12 @@ body {
 
 .card {
     width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
     padding: 2.5rem;
     color: white;
     text-align: center;
@@ -33,19 +37,23 @@ body {
 
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+
+    width: 70%;
+
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
     object-fit: cover;
     margin-bottom: 1.5rem;
 }
-.card h2 {
+.card h1 {
+  font-size: 2em;
   margin-bottom: 1rem;
+
 }
 .card p {
   font-weight: 400;
   margin-bottom: 1.5rem;
+
 }
 .card:hover {
   transform: translateY(-10px) scale(1.05);
@@ -54,7 +62,7 @@ body {
 .social-icons a {
   color: white;
   margin: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 
