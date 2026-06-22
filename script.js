@@ -8,7 +8,6 @@ function playMusic() {
     console.log("Autoplay blocked, waiting for interaction.");
   });
 }
-File("style.css")
 document.addEventListener("DOMContentLoaded", () => {
 
 
