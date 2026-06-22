@@ -1,5 +1,4 @@
 const bgmusic = document.getElementById("bg-music");
-
 function playMusic() {
   // 1. Added the missing parentheses here
   bgmusic.play().then(() => {
@@ -9,7 +8,7 @@ function playMusic() {
     console.log("Autoplay blocked, waiting for interaction.");
   });
 }
-
+File("style.css")
 document.addEventListener("DOMContentLoaded", () => {
 
 

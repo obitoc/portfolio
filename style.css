@@ -4,62 +4,89 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    min-height: 100vh;                 
-    background-image: url('bac.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  perspective: 1000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  min-height: 100vh;
+
+
+  background-image: url('bac.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
-.card {
-    width: 90%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-    padding: 2.5rem;
-    color: white;
-    text-align: center;
-    cursor:pointer;
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(12px); 
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 
 .profile-pic {
 
-    width: 70%;
-
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    object-fit: cover;
-    margin-bottom: 1.5rem;
+  width: 70%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
+
+.card {
+
+
+  width: 90%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  padding: 2.5rem;
+  color: white;
+
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(7px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  transition: transform 1.3s ease-in-out, box-shadow 1.3s ease-in-out;
+
+}
+
 .card h1 {
+
+  color: rgb(255, 254, 254);
   font-size: 2em;
+  z-index: -133;
   margin-bottom: 1rem;
 
+
+
 }
+
 .card p {
+
   font-weight: 400;
   margin-bottom: 1.5rem;
 
+
 }
+
 .card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px) rotate3d(1,1, -1, -40deg);
+  box-shadow: -15px 40px 35px -5px rgba(0, 0, 0, 0.5);
 }
+
 .social-icons a {
+  display: inline-block;
+  transition: all .3s ease-in-out;
   color: white;
   margin: 0 0.5rem;
   font-size: 1.6rem;
@@ -69,10 +96,16 @@ body {
 .social-icons .bi-instagram {
   color: #E4405F;
 }
+
 .social-icons .bi-telegram {
   color: skyblue;
 }
 
 .social-icons .bi-github {
   color: black;
+
+}
+
+.social-icons a:hover {
+  transform: scale(1.4) translateY(-20px);
 }
